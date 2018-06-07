@@ -1,0 +1,20 @@
+{
+    "version":"0.2.0",
+    "configurations": [
+        {
+            "name": "使用本机 Chrome 调试",
+                    "type": "chrome",
+                    "request": "launch",
+                    "file": "${workspaceRoot}/index.html",
+                    "sourceMaps": true,
+                    "webRoot": "${workspaceRoot}",
+                    "userDataDir":"${tmpdir}",
+                    "port":5433,
+                    "runtimeArgs": [
+                        "--disable-session-crashed-bubble",
+                        "--disable-infobars",
+                        "--allow-file-access-from-files"
+                      ],
+        }
+    ]
+}
